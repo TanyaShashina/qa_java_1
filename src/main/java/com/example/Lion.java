@@ -1,7 +1,7 @@
 package com.example;
 
 import java.util.List;
-
+import com.example.Feline;
 public class Lion {
 
     boolean hasMane;
@@ -18,7 +18,7 @@ public class Lion {
         }
     }
 
-    Feline feline = new com.example.Feline();
+    Feline feline = new Feline();
 
     public int getKittens() {
         return feline.getKittens();
