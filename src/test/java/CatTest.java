@@ -23,10 +23,10 @@ public class CatTest {
     }
 
     @Test
-    public void GetFood() throws Exception{
+    public void GetFood() throws Exception {
         Cat cat = new Cat(feline);
         Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
-        Assert.assertEquals(expected,cat.getFood());
+        Assert.assertEquals(expected, cat.getFood());
     }
 }

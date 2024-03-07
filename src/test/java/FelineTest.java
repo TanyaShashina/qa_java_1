@@ -15,6 +15,7 @@ public class FelineTest {
     @Spy
     private Feline feline;
     private Animal animal = new Animal();
+    private int onePet = 1;
 
     @Test
     public void EatMeat() throws Exception{
@@ -28,12 +29,12 @@ public class FelineTest {
 
     @Test
     public void GetKittensNoParam() {
-        Assert.assertEquals(1, feline.getKittens());
+        Assert.assertEquals(onePet, feline.getKittens());
     }
 
     @Test
     public void GetKittensWithParam() {
         feline.getKittens(1);
-        Mockito.verify(feline, Mockito.times(1)).getKittens(1);
+        Mockito.verify(feline, Mockito.times(onePet)).getKittens(1);
     }
 }

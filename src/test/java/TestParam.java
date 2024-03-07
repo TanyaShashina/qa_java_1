@@ -24,9 +24,10 @@ public class TestParam {
                 {"Самка", false},
         };
     }
+
     @Test
     public void testLion() throws Exception {
         Lion lion = new Lion(sex, feline);
-        Assert.assertEquals(lion.doesHaveMane(), result);
+        Assert.assertEquals(result, lion.doesHaveMane());
     }
 }
