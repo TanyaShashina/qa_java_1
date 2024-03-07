@@ -1,13 +1,13 @@
 package com.example;
 
 import java.util.List;
-import com.example.Feline;
+
 public class Lion {
 
     boolean hasMane;
 
     //изменение в базовом конструкторе
-    public Lion(String sex, com.example.Feline feline) throws Exception {
+    public Lion(String sex, Feline feline) throws Exception {
         this.feline = feline;
         if ("Самец".equals(sex)) {
             hasMane = true;

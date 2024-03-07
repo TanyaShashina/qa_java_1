@@ -34,7 +34,7 @@ public class FelineTest {
 
     @Test
     public void GetKittensWithParam() {
-        feline.getKittens(1);
-        Mockito.verify(feline, Mockito.times(onePet)).getKittens(1);
+        feline.getKittens(onePet);
+        Mockito.verify(feline, Mockito.times(onePet)).getKittens(onePet);
     }
 }
